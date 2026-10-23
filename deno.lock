@@ -8,50 +8,36 @@
     "jsr:@std/cli@1.0.0": "1.0.0",
     "jsr:@std/dotenv@0.224": "0.224.2",
     "jsr:@std/encoding@0.224.0": "0.224.0",
-    "jsr:@std/flags@0.224": "0.224.0",
     "jsr:@std/fmt@0.224": "0.224.0",
     "jsr:@std/fs@0.224": "0.224.0",
-    "jsr:@std/fs@0.224.0": "0.224.0",
     "jsr:@std/fs@1": "1.0.24",
     "jsr:@std/internal@0.224": "0.224.0",
     "jsr:@std/internal@^1.0.12": "1.0.14",
     "jsr:@std/internal@^1.0.14": "1.0.14",
     "jsr:@std/path@0.224": "0.224.0",
-    "jsr:@std/path@0.224.0": "0.224.0",
     "jsr:@std/path@^1.1.5": "1.1.6",
     "jsr:@std/semver@1": "1.0.8",
     "jsr:@std/testing@*": "1.0.19",
     "jsr:@std/testing@0.224": "0.224.0",
     "jsr:@std/testing@^1.0.17": "1.0.19",
-    "jsr:@ursamu/core@1.0.0": "1.0.0",
-    "jsr:@ursamu/core@1.0.1": "1.0.1",
-    "jsr:@ursamu/jobs@~0.1.1": "0.1.1",
-    "jsr:@ursamu/mush@1.0.9": "1.0.9",
-    "jsr:@ursamu/mush@~0.1.3": "0.1.30",
-    "jsr:@ursamu/mushcode@*": "0.7.0",
     "jsr:@ursamu/mushcode@0.7": "0.7.0",
-    "jsr:@ursamu/mushcode@0.7.0": "0.7.0",
-    "jsr:@ursamu/ursamu@^2.3.0": "2.7.0",
     "jsr:@zaubrik/djwt@^3.0.2": "3.0.2",
-    "npm:@deno/sandbox@0.10.0": "0.10.0",
     "npm:@digibear/tags@1.0.0": "1.0.0",
     "npm:@electric-sql/pglite@~0.5.2": "0.5.4",
     "npm:@langchain/anthropic@0.3": "0.3.34_@langchain+core@0.3.80_zod@4.4.3",
     "npm:@langchain/core@0.3": "0.3.80",
     "npm:@langchain/google-genai@0.2": "0.2.18_@langchain+core@0.3.80",
     "npm:@langchain/langgraph@0.2": "0.2.74_@langchain+core@0.3.80",
-    "npm:@nicia-ai/typegraph@0.31": "0.31.0_@electric-sql+pglite@0.5.4_drizzle-orm@0.45.2__@electric-sql+pglite@0.5.4_zod@4.4.3",
+    "npm:@nicia-ai/typegraph@0.31": "0.31.0_@electric-sql+pglite@0.5.4_drizzle-orm@0.45.4_zod@4.4.3",
     "npm:@ursamu/parser@1.2.4": "1.2.4",
     "npm:bcryptjs@2.4.3": "2.4.3",
     "npm:fflate@0.8.2": "0.8.2",
     "npm:imagescript@1.3.0": "1.3.0",
     "npm:lodash@4.17.21": "4.17.21",
-    "npm:lodash@^4.18.1": "4.18.1",
     "npm:playwright@1.49.1": "1.49.1",
     "npm:quickjs-emscripten@0.29.0": "0.29.0",
     "npm:stripe@17": "17.7.0",
     "npm:sucrase@3.35.0": "3.35.0",
-    "npm:sucrase@^3.35.0": "3.35.0",
     "npm:tweetnacl@1.0.3": "1.0.3",
     "npm:unpdf@0.11": "0.11.0",
     "npm:zod@4.4.3": "4.4.3",
@@ -79,12 +65,6 @@
     },
     "@std/encoding@0.224.0": {
       "integrity": "efb6dca97d3e9c31392bd5c8cfd9f9fc9decf5a1f4d1f78af7900a493bcf89b5"
-    },
-    "@std/flags@0.224.0": {
-      "integrity": "d40eaf58c356b2e1313c6d4e62dc28b614aad2ddae6f5ff72a969e0b1f5ad689",
-      "dependencies": [
-        "jsr:@std/assert@0.224"
-      ]
     },
     "@std/fmt@0.224.0": {
       "integrity": "e20e9a2312a8b5393272c26191c0a68eda8d2c4b08b046bad1673148f1d69851"
@@ -137,84 +117,8 @@
         "jsr:@std/internal@^1.0.14"
       ]
     },
-    "@ursamu/core@1.0.0": {
-      "integrity": "b1bfb7712982a00a259425699dcdd9b32ed9d6e2b32f9728bd6185e7becfb743",
-      "dependencies": [
-        "jsr:@std/path@0.224",
-        "jsr:@std/semver",
-        "jsr:@zaubrik/djwt",
-        "npm:@nicia-ai/typegraph",
-        "npm:zod@4.4.3"
-      ]
-    },
-    "@ursamu/core@1.0.1": {
-      "integrity": "4842bb97d86d99ec9dde3154f1425d596893c67c29c7e9e85d00fefc5664e37b",
-      "dependencies": [
-        "jsr:@std/path@0.224",
-        "jsr:@std/semver",
-        "jsr:@zaubrik/djwt",
-        "npm:@nicia-ai/typegraph",
-        "npm:zod@4.4.3"
-      ]
-    },
-    "@ursamu/jobs@0.1.1": {
-      "integrity": "2f2a78c3c09ada4b41762f73a48f0b4b6e0be4de5967baf4a00a1d30ea98dfb7",
-      "dependencies": [
-        "jsr:@ursamu/mush@1.0.9"
-      ]
-    },
-    "@ursamu/mush@0.1.30": {
-      "integrity": "97411714828810f0ff9067a6fc5292b57ce238123a2916aa2875e7da239c9811",
-      "dependencies": [
-        "jsr:@std/dotenv",
-        "jsr:@std/fs@0.224",
-        "jsr:@std/path@0.224",
-        "jsr:@ursamu/core@1.0.1",
-        "jsr:@ursamu/mushcode@0.7",
-        "npm:@digibear/tags",
-        "npm:@ursamu/parser",
-        "npm:bcryptjs",
-        "npm:quickjs-emscripten",
-        "npm:sucrase@3.35.0"
-      ]
-    },
-    "@ursamu/mush@1.0.9": {
-      "integrity": "4f1de7144b4b65461e3debc8e69885f8e9beb2c89c54cbf36a10112f9c13afba",
-      "dependencies": [
-        "jsr:@std/dotenv",
-        "jsr:@std/fs@0.224",
-        "jsr:@std/path@0.224",
-        "jsr:@ursamu/core@1.0.0",
-        "jsr:@ursamu/mushcode@0.7",
-        "npm:@digibear/tags",
-        "npm:@ursamu/parser",
-        "npm:bcryptjs",
-        "npm:quickjs-emscripten",
-        "npm:sucrase@3.35.0"
-      ]
-    },
     "@ursamu/mushcode@0.7.0": {
       "integrity": "bf68b211b4448f0dcb79f66b9ef5b032661af293f771a732e191e77353a028da"
-    },
-    "@ursamu/ursamu@2.7.0": {
-      "integrity": "80af2e54afd2ee14cc7214a74913675c0b82432da676df565aea4e2426ea82ac",
-      "dependencies": [
-        "jsr:@std/dotenv",
-        "jsr:@std/flags",
-        "jsr:@std/fs@0.224",
-        "jsr:@std/fs@0.224.0",
-        "jsr:@std/path@0.224",
-        "jsr:@std/path@0.224.0",
-        "jsr:@std/semver",
-        "jsr:@zaubrik/djwt",
-        "npm:@deno/sandbox",
-        "npm:@digibear/tags",
-        "npm:@ursamu/parser",
-        "npm:bcryptjs",
-        "npm:lodash@4.17.21",
-        "npm:quickjs-emscripten",
-        "npm:sucrase@3.35.0"
-      ]
     },
     "@zaubrik/djwt@3.0.2": {
       "integrity": "8070adaa49cd9e5d2b8ae82fd461132c966ef2f8ff8378db4a4da8df4f17c664",
@@ -240,24 +144,6 @@
     },
     "@cfworker/json-schema@4.1.1": {
       "integrity": "sha512-gAmrUZSGtKc3AiBL71iNWxDsyUC5uMaKKGdvzYsBoTW/xi42JQHl7eKV2OYzCUqvc+D2RCcf7EXY2iCyFIk6og=="
-    },
-    "@deno/sandbox@0.10.0": {
-      "integrity": "sha512-Fq41hNE4H3kKGHyYvbtkyi26SGKCawWt3dbJE2dmSsWqCf3VErfqXBMBe7hBOySBbNwPQLUS+sHsHHelAGwzjg==",
-      "dependencies": [
-        "@deno/shim-deno",
-        "ws",
-        "zod@4.4.3"
-      ]
-    },
-    "@deno/shim-deno-test@0.5.0": {
-      "integrity": "sha512-4nMhecpGlPi0cSzT67L+Tm+GOJqvuk8gqHBziqcUQOarnuIax1z96/gJHCSIz2Z0zhxE6Rzwb3IZXPtFh51j+w=="
-    },
-    "@deno/shim-deno@0.18.2": {
-      "integrity": "sha512-oQ0CVmOio63wlhwQF75zA4ioolPvOwAoK0yuzcS5bDC1JUvH3y1GS8xPh8EOpcoDQRU4FTG8OQfxhpR+c6DrzA==",
-      "dependencies": [
-        "@deno/shim-deno-test",
-        "which@4.0.0"
-      ]
     },
     "@digibear/tags@1.0.0": {
       "integrity": "sha512-WyNr8pR6B0NlN1mA6PD9JYSwvT5RoYKu1w3w6Q327qA9cqTZlhdBxlywXMTiHmDzVs4b90RmgCCwy+sxpobNSQ=="
@@ -316,8 +202,8 @@
     "@jridgewell/resolve-uri@3.1.2": {
       "integrity": "sha512-bRISgCIjP20/tbWSPWMEi54QVPRZExkuD9lJL+UIxUKtwVJA8wW1Trb1jMs1RFXo1CBTNZ/5hpC9QvmKWdopKw=="
     },
-    "@jridgewell/sourcemap-codec@1.5.5": {
-      "integrity": "sha512-cYQ9310grqxueWbl+WuIUIaiUaDcj7WOq5fVhEljNVgRfOUhY9fy2zTvfoqWsnebh8Sl70VScFbICvJnLKB0Og=="
+    "@jridgewell/sourcemap-codec@1.6.0": {
+      "integrity": "sha512-T7jf+5zgsZHwNJ4lvQ7/aezbyk0nNX+zJVWpmHA7VYsEx7a7qr5Rg5IbtJFqkgze5Y2sruq1RUY8Q837Od7iFw=="
     },
     "@jridgewell/trace-mapping@0.3.31": {
       "integrity": "sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==",
@@ -404,7 +290,7 @@
       ],
       "bin": true
     },
-    "@nicia-ai/typegraph@0.31.0_@electric-sql+pglite@0.5.4_drizzle-orm@0.45.2__@electric-sql+pglite@0.5.4_zod@4.4.3": {
+    "@nicia-ai/typegraph@0.31.0_@electric-sql+pglite@0.5.4_drizzle-orm@0.45.4_zod@4.4.3": {
       "integrity": "sha512-BvfFHiBBlDwuNELkhlyqzkVmFl3dHsxSV3SXiexsCe6IIvOL0edAdKtWB4GTSs4o8amVLNOpRm5gw6csEcZ+fA==",
       "dependencies": [
         "@electric-sql/pglite",
@@ -452,8 +338,8 @@
     "ansi-regex@5.0.1": {
       "integrity": "sha512-quJQXlTSUGL2LH9SUXo8VwsY4soanhgo6LNSm84E1LBcE8s3O0wpdiRzyR9z/ZZJMlMWv37qOOb9pdJlMUEKFQ=="
     },
-    "ansi-regex@6.2.2": {
-      "integrity": "sha512-Bq3SmSpyFHaWjPk8If9yc6svM8c56dB5BAtW4Qbw5jHTwwXXcTLoRMkpDJp6VL0XzlWaCHTXrkFURMYmD0sLqg=="
+    "ansi-regex@6.4.0": {
+      "integrity": "sha512-KzTVk2tCWAHtYrvvvaP8bJKJq2pVinhLcGEQdtLIYPbmNGNyYe8QwNaTUYQp2J7/vIsUKt5QCqAfUkYyG9DkOw=="
     },
     "ansi-styles@4.3.0": {
       "integrity": "sha512-zbB9rCJAT1rbjiVDb2hqKFHNYLxgtk8NURxZ3IZwD3F6NtxbXZQCnnSi1Lkx+IDohdPlFp222wVALIheZJQSEg==",
@@ -497,8 +383,8 @@
         "concat-map"
       ]
     },
-    "brace-expansion@2.1.4": {
-      "integrity": "sha512-hGfVzPxthbf3+2yjg/RBs60cB0FhqBS/zvdV/4wn4/BmN0bNMMHPc4V/BbFieqf1TKAGGAHnY4eSjajCl0f2Xg==",
+    "brace-expansion@2.1.7": {
+      "integrity": "sha512-uZbew1NqdmPDTMJ8ah1y+b+9QEJrfkXFk3RcTQw3X0jW/xRUvFKsg1CfQdSYGdTbXZWExtU3J3ccxtnfw1Fi0g==",
       "dependencies": [
         "balanced-match"
       ]
@@ -572,7 +458,7 @@
       "dependencies": [
         "path-key",
         "shebang-command",
-        "which@2.0.2"
+        "which"
       ]
     },
     "debug@4.4.3": {
@@ -596,8 +482,8 @@
     "detect-libc@2.1.2": {
       "integrity": "sha512-Btj2BOOO83o3WyH59e8MgXsxEQVcarkUOpEYrubB0urwnN10yQ364rsiByU11nZlqWYZm05i/of7io4mzihBtQ=="
     },
-    "drizzle-orm@0.45.2_@electric-sql+pglite@0.5.4": {
-      "integrity": "sha512-kY0BSaTNYWnoDMVoyY8uxmyHjpJW1geOmBMdSSicKo9CIIWkSxMIj2rkeSR51b8KAPB7m+qysjuHme5nKP+E5Q==",
+    "drizzle-orm@0.45.4_@electric-sql+pglite@0.5.4": {
+      "integrity": "sha512-NiM1YZpJ2UxyeE67DpDDZ+Tsw4YLX3trSlkNT7Tm9eKoUNb1LvaAaQzXgYQsWs+AQ9TUmmwMmBOCXuqqxUWKKQ==",
       "dependencies": [
         "@electric-sql/pglite"
       ],
@@ -778,9 +664,6 @@
     "isexe@2.0.0": {
       "integrity": "sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw=="
     },
-    "isexe@3.1.5": {
-      "integrity": "sha512-6B3tLtFqtQS4ekarvLVMZ+X+VlvQekbe4taUkf/rhVO3d/h0M2rfARm/pXLcPEsjjMsFgrFgSrhQIxcSVrBz8w=="
-    },
     "jackspeak@3.4.3": {
       "integrity": "sha512-OGlZQpz2yfahA/Rd1Y8Cd9SIEsqvXkLVoSw/cgwhnhFMDbsQFeZYoJJ7bIZBS9BcamUW96asq/npPWugM+RQBw==",
       "dependencies": [
@@ -820,9 +703,6 @@
     "lodash@4.17.21": {
       "integrity": "sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg=="
     },
-    "lodash@4.18.1": {
-      "integrity": "sha512-dMInicTPVE8d1e5otfwmmjlxkZoUpiVLwyeTdUsi/Caj/gfzzblBcCE5sRHV/AsjuCmxWrte2TNGSYuCeCq+0Q=="
-    },
     "lru-cache@10.4.3": {
       "integrity": "sha512-JNAzZcXrCt42VGLuYz0zfAzDfAvJWW6AfYlDBQyDV5DClI2m5sAmK+OIO7s59XfsRsWHp02jAJrRadPRGTt6SQ=="
     },
@@ -847,7 +727,7 @@
     "minimatch@9.0.9": {
       "integrity": "sha512-OBwBN9AL4dqmETlpS2zasx+vTeWclWzkblfZk7KTA5j3jeOONz/tRCnZomUyvNg83wL5Zv9Ss6HMJXAgL8R2Yg==",
       "dependencies": [
-        "brace-expansion@2.1.4"
+        "brace-expansion@2.1.7"
       ]
     },
     "minipass@3.3.6": {
@@ -1142,7 +1022,7 @@
     "strip-ansi@7.2.0": {
       "integrity": "sha512-yDPMNjp4WyfYBkHnjIRLfca1i6KMyGCtsVgoKe/z1+6vukgaENdgGBZt+ZmKPc4gavvEZ5OgHfHdrazhgNyG7w==",
       "dependencies": [
-        "ansi-regex@6.2.2"
+        "ansi-regex@6.4.0"
       ]
     },
     "stripe@17.7.0": {
@@ -1249,14 +1129,7 @@
     "which@2.0.2": {
       "integrity": "sha512-BLI3Tl1TW3Pvl70l3yq3Y64i+awpwXqsGBYWkkqMtnbXgrMD+yj7rhW0kuEDxzJaYXGjEW5ogapKNMEKNMjibA==",
       "dependencies": [
-        "isexe@2.0.0"
-      ],
-      "bin": true
-    },
-    "which@4.0.0": {
-      "integrity": "sha512-GlaYyEb07DPxYCKhKzplCWBJtvxZcZMrL+4UkrTSJHHPyZU4mYYTv3qaOe77H7EODLSSopAUFAc6W8U4yqvscg==",
-      "dependencies": [
-        "isexe@3.1.5"
+        "isexe"
       ],
       "bin": true
     },
@@ -1284,9 +1157,6 @@
     },
     "wrappy@1.0.2": {
       "integrity": "sha512-l4Sp/DRseor9wL6EvV2+TuQn63dMkPjZ/sp9XkghTEbV9KlPS1xUsZ3u7/IQO4wxtcFB4bgpQPRcR3QCvezPcQ=="
-    },
-    "ws@8.21.3": {
-      "integrity": "sha512-201TZ/kPWxoPr/OKWjquZR1SWKXcvxdH+e1xrx89b3YbmzLMFCLfnaG1HFIgWzJOEWZ7MvpK++odZufgYR50Rw=="
     },
     "yallist@4.0.0": {
       "integrity": "sha512-3wdGidZyq5PB084XLES5TpOSRA3wjXAlIWMhum2kRcv/41Sn2emQ0dycQW4uZXLejwKvg6EsvbdlVL+FYEct7A=="
@@ -1434,73 +1304,6 @@
       "npm:zod@4.4.3"
     ],
     "members": {
-      "games/bridgetown": {
-        "dependencies": [
-          "jsr:@std/dotenv@0.224",
-          "jsr:@std/fs@0.224",
-          "jsr:@std/path@0.224",
-          "jsr:@ursamu/core@1.0.6",
-          "jsr:@ursamu/help@1.3.1",
-          "jsr:@ursamu/mush@1.0.40",
-          "jsr:@ursamu/mushcode@0.7.0",
-          "npm:@digibear/tags@1.0.0",
-          "npm:@ursamu/parser@1.2.4",
-          "npm:bcryptjs@2.4.3",
-          "npm:quickjs-emscripten@0.29.0"
-        ]
-      },
-      "games/cpr": {
-        "dependencies": [
-          "jsr:@std/assert@0.224",
-          "jsr:@std/dotenv@0.224",
-          "jsr:@std/flags@0.224",
-          "jsr:@std/fmt@0.224",
-          "jsr:@std/fs@0.224",
-          "jsr:@std/path@0.224",
-          "jsr:@std/semver@1",
-          "jsr:@std/testing@^1.0.17",
-          "jsr:@ursamu/core@1.0.4",
-          "jsr:@ursamu/help@1.2.1",
-          "jsr:@ursamu/mush@1.0.35",
-          "jsr:@ursamu/mushcode@0.7.0",
-          "jsr:@zaubrik/djwt@^3.0.2",
-          "npm:@digibear/tags@1.0.0",
-          "npm:@electric-sql/pglite@~0.5.2",
-          "npm:@langchain/anthropic@0.3",
-          "npm:@langchain/core@0.3",
-          "npm:@langchain/google-genai@0.2",
-          "npm:@langchain/langgraph@0.2",
-          "npm:@nicia-ai/typegraph@0.31",
-          "npm:@ursamu/parser@1.2.4",
-          "npm:bcryptjs@2.4.3",
-          "npm:lodash@^4.18.1",
-          "npm:quickjs-emscripten@0.29.0",
-          "npm:stripe@17",
-          "npm:sucrase@^3.35.0",
-          "npm:unpdf@0.11",
-          "npm:zod@4.4.3"
-        ]
-      },
-      "games/roses": {
-        "dependencies": [
-          "jsr:@std/assert@0.224",
-          "jsr:@std/dotenv@0.224",
-          "jsr:@std/flags@0.224",
-          "jsr:@std/fmt@0.224",
-          "jsr:@std/fs@0.224",
-          "jsr:@std/path@0.224",
-          "jsr:@std/semver@1",
-          "jsr:@ursamu/core@1.0.5",
-          "jsr:@ursamu/help@1.3.0",
-          "jsr:@ursamu/mush@1.0.38",
-          "jsr:@ursamu/mushcode@0.7.0",
-          "jsr:@zaubrik/djwt@^3.0.2",
-          "npm:@digibear/tags@1.0.0",
-          "npm:@ursamu/parser@1.2.4",
-          "npm:bcryptjs@2.4.3",
-          "npm:quickjs-emscripten@0.29.0"
-        ]
-      },
       "packages/ai-gm": {
         "dependencies": [
           "jsr:@std/assert@0.224",
@@ -1555,7 +1358,9 @@
           "jsr:@std/fmt@0.224",
           "jsr:@std/fs@0.224",
           "jsr:@std/path@0.224",
-          "jsr:@std/semver@1"
+          "jsr:@std/semver@1",
+          "jsr:@ursamu/core@^1.0.6",
+          "jsr:@ursamu/mush@^1.0.40"
         ]
       },
       "packages/combat": {
@@ -1725,28 +1530,6 @@
           "jsr:@ursamu/mush@^1.0.39",
           "jsr:@ursamu/mushcode@0.7",
           "jsr:@zaubrik/djwt@^3.0.2"
-        ]
-      }
-    },
-    "links": {
-      "jsr:@ursamu/globals@1.2.1": {
-        "dependencies": [
-          "jsr:@std/assert@0.224",
-          "jsr:@std/fs@0.224",
-          "jsr:@std/path@0.224",
-          "jsr:@std/testing@0.224",
-          "jsr:@ursamu/mushcode@*",
-          "jsr:@ursamu/ursamu@^2.3.0"
-        ]
-      },
-      "jsr:@ursamu/web@0.2.73": {
-        "dependencies": [
-          "jsr:@std/assert@0.224",
-          "jsr:@std/path@0.224",
-          "jsr:@ursamu/jobs@^1.1.2",
-          "jsr:@ursamu/mush@1",
-          "jsr:@ursamu/site@~0.1.5",
-          "jsr:@ursamu/wiki@~0.2.2"
         ]
       }
     }
